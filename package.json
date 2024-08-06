@@ -1,0 +1,38 @@
+{
+  "name": "panel",
+  "version": "0.0.1",
+  "description": "Processor and RAM information display panel",
+  "main": "main.js",
+  "scripts": {
+    "test": "",
+    "bild-l": "electron-builder -l",
+    "bild-w": "electron-builder -w",
+    "start": "electron ."
+  },
+  "author": "Maykow Menezes",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^31.3.1",
+    "electron-builder": "^24.13.3"
+  },
+  "dependencies": {
+    "systeminformation": "^5.23.2"
+  },
+
+  "build":{
+    "appId": "com.panel.app",
+    "linux":{
+      "target":["appImage"],
+      "icon": "build/icons/512x512.png"
+    },
+    "win":{
+      "target":["portable"],
+      "icon": "build/icons/512x512.png"
+    }
+
+  }
+
+
+
+}
+

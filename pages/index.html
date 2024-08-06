@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PANEL</title>
+        <meta charset="utf-8">
+        <link href="../style/theme.css" rel="stylesheet">
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />        
+    </head>
+    <body>
+        <h3>PROCESSOR</h3>
+        <div class="info">
+            <label for="temp_main">main:</label><p id="temp_main">53 ºC</p>
+        </div>       
+        <div class="info">            
+            <label for="temp_max">max:</label><p id="temp_max">63 ºC</p>
+        </div>       
+
+        <div id="cpus">
+            <!-- <div class="cpu">
+                <div class="progress_container">
+                    <div class="progress_bar"></div>
+                </div>
+                <p>80 %</p>
+                <p>57 ºC</p>
+            </div> -->
+            
+        </div>
+
+        <h3>RAM</h3>
+        <div class="progress_container" id="container_ram">
+            <div class="progress_bar" id="bar_ram"></div>
+        </div>
+        <div id="info_ram">
+            <div class="info">
+                <label for="ram_total">Total:</label><p id="ram_total">0 MB</p>
+            </div>
+            <div class="info">
+                <label for="ram_free">Free:</label><p id="ram_free">0 MB</p>
+            </div>        
+            <div class="info">
+                <label for="ram_used">Used:</label><p id="ram_used">0 MB 0%</p>
+            </div>
+        </div>
+        
+        
+    </body>
+
+    <script type="text/javascript" src="../src/scripts.js"></script>
+</html>
